@@ -1,4 +1,3 @@
-
 #!/bin/bash
 # SPDX-FileCopyrightText: 2024 Taisei Sakai
 # SPDX-License-Identifier: BSD-3-Clause
@@ -30,10 +29,10 @@ if ! which ros2 > /dev/null; then
 fi
 
 # テスト用のログファイル
-log_file="/tmp/ros2mypkg_topic.log"
+log_file="/tmp/kadai_topic.log"
 
 # ROS2 ノードをバックグラウンドで起動
-timeout 50 ros2 run ros2mypkg baito_publisher &
+timeout 50 ros2 run kadai baito_publisher &
 ros_pid=$!
 
 # プロセスが起動するのを待つ
