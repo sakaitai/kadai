@@ -1,13 +1,9 @@
-# SPDX-FileCopyrightText: 2024 Taisei Sakai
-# SPDX-License-Identifier: BSD-3-Clause
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Int32
 import time
 
 class BaitoPublisher(Node):
-
     def __init__(self):
         super().__init__('baito_publisher')  # ノード名
         self.publisher_ = self.create_publisher(Int32, 'baito_time', 10)  # トピック名
@@ -23,14 +19,18 @@ class BaitoPublisher(Node):
 
 def main(args=None):
     rclpy.init(args=args)
-    node = BaitoPublisher()
+    node = None
     try:
+        node = BaitoPublisher()
         rclpy.spin(node)
     except KeyboardInterrupt:
         pass
     finally:
-        node.destroy_node()
-        rclpy.shutdown()
+        if node is not None:
+            node.destroy_node()
+        if rclpy.ok():  # シャットダウンがまだ呼び出されていない場合のみ実行
+            rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
+
