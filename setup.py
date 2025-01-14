@@ -27,8 +27,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'baito_publisher = ros2mypkg.baito_publisher:main',
-            'listener = ros2mypkg.listener:main',
+            'baito_publisher = kadai.baito_publisher:main',
+            'listener = kadai.listener:main',
         ],
     },
 )
