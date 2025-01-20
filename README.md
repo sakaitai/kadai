@@ -12,7 +12,7 @@
 以下のコマンドで実行
 
 ```
-$ ros2 run ros2mypkg baito_publisher
+$ ros2 run kadai baito_publisher
 ```
 別の端末で以下のコマンドで確認
 
@@ -41,5 +41,5 @@ data: 9
 listener.pyはテスト用です。
 
 ## ライセンスと著作権
-- このソフトウェアパッケージは[3条項BSDライセンス](https://github.com/sakaitai/ros2mypkg/blob/main/LICENSE)の下、再頒布および使用が許可されています。
+- このソフトウェアパッケージは[3条項BSDライセンス](https://github.com/sakaitai/kadai/blob/main/LICENSE)の下、再頒布および使用が許可されています。
 -  *© 2025 Taisei Sakai*
