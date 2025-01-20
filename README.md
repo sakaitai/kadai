@@ -38,7 +38,7 @@ data: 9
   
 
 ## 注意事項
-listener.pyはテスト用です。
+listener.pyはテスト用です
 
 ## ライセンスと著作権
 - このソフトウェアパッケージは[3条項BSDライセンス](https://github.com/sakaitai/kadai/blob/main/LICENSE)の下、再頒布および使用が許可されています。
